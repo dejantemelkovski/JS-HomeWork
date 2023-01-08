@@ -1,56 +1,77 @@
-year = 1986;
-number = 4;
-percent = 12;
-let chineseZodiac=(year-number)%percent;
+let birthOfYear = prompt('Enter year of birth:');
+console.log(birthOfYear);
 
-console.log ('In the Chinese Zodiac');
+let finalZodiac = (birthOfYear - 4) % 12;
 
-    if(chineseZodiac===0) {
-    console.log ('You are a Rat')
-    };
+// if(finalZodiac === 0) {
+//     console.log('Your Chinese Zodiac is: Rat');
+// } else if(finalZodiac === 1){
+//     console.log('Your Chinese Zodiac is: Ox');
+// } else if(finalZodiac === 2){
+//     console.log('Your Chinese Zodiac is: Tiger');
+// } else if(finalZodiac === 3){
+//     console.log('Your Chinese Zodiac is: Rabbit');
+// } else if(finalZodiac === 4){
+//     console.log('Your Chinese Zodiac is: Dragon');
+// } else if(finalZodiac === 5){
+//     console.log('Your Chinese Zodiac is: Snake');
+// } else if(finalZodiac === 6){
+//     console.log('Your Chinese Zodiac is: Horse');
+// } else if(finalZodiac === 7){
+//     console.log('Your Chinese Zodiac is: Goat');
+// } else if(finalZodiac === 8){
+//     console.log('Your Chinese Zodiac is: Monkey');
+// } else if(finalZodiac === 9){
+//     console.log('Your Chinese Zodiac is: Rooster');
+// } else if(finalZodiac === 10){
+//     console.log('Your Chinese Zodiac is: Dog');
+// } else if(finalZodiac === 11){
+//     console.log('Your Chinese Zodiac is: Pig');
+// } else{
+//     console.log('Enter a valid year')
+// }
 
-    if(chineseZodiac===1) {
-        console.log ('You are a Ox')
-    };
 
-    if(chineseZodiac===2) {
-        console.log ('You are a Tiger')
-    };
+// Neznam kako vo Switch da ja iskoristam finalZodiac, da ne bide so direkna formula vo switch.
 
-    if(chineseZodiac===3) {
-        console.log ('You are a Rabbit')
-    };
-
-    if(chineseZodiac===4) {
-        console.log ('You are a Dragon')
-    };
-
-    if(chineseZodiac===5) {
-        console.log ('You are a Snake')
-    };
-
-    if(chineseZodiac===6) {
-        console.log ('You are a Horse')
-    };
-
-    if(chineseZodiac===7) {
-        console.log ('You are a Goat')
-    };
-
-    if(chineseZodiac===8) {
-        console.log ('You are a Monkey')
-    };
-
-    if(chineseZodiac===9) {
-        console.log ('You are a Rooster')
-    };
-
-    if(chineseZodiac===10) {
-        console.log ('You are a Dog')
-    };
-
-    if(chineseZodiac===11) {
-        console.log ('You are a Pig')
-    };
-    
-
+switch((birthOfYear - 4) % 12){
+    case 0:
+        console.log('Your Chinese Zodiac is: Rat');
+        break;
+    case 1:
+        console.log('Your Chinese Zodiac is: Ox');
+        break;
+    case 2:
+        console.log('Your Chinese Zodiac is: Tiger');
+        break;
+    case 3:
+        console.log('Your Chinese Zodiac is: Rabbit');
+        break;
+    case 4:
+        console.log('Your Chinese Zodiac is: Dragon');
+        break;
+    case 5:
+        console.log('Your Chinese Zodiac is: Snake');
+        break;
+    case 6:
+        console.log('Your Chinese Zodiac is: Horse');
+        break;
+    case 7:
+        console.log('Your Chinese Zodiac is: Goat');
+        break;
+    case 8:
+        console.log('Your Chinese Zodiac is: Monkey');
+        break;
+    case 9:
+        console.log('Your Chinese Zodiac is: Rooster');
+        break;
+    case 10:
+        console.log('Your Chinese Zodiac is: Dog');
+        break;
+    case 11:
+        console.log('Your Chinese Zodiac is: Pig');
+        break;
+    default:
+        console.log('Enter a valid year');
+        break;
+}
